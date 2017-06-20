@@ -51,7 +51,7 @@ function numerar() {
     let fecha = fechaPorDia(2017, i);
     let mes = fecha.getMonth();
     let select_tabla = document.getElementsByClassName('tabla_mes')[mes];
-    let dia = fecha.getDate()
+    let dia = fecha.getDate();
     let dia_semana = fecha.getDay();
     if (dia == 1) {var sem = 0;}
     select_tabla.children[2].children[sem].children[dia_semana].innerText = dia;
